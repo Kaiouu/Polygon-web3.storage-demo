@@ -1,0 +1,38 @@
+{
+  "name": "example-forum-dapp",
+  "version": "1.0.0",
+  "description": "A decentralized forum example app that uses Web3.Storage",
+  "main": "index.js",
+  "workspaces": [
+    "packages/contract",
+    "packages/webapp"
+  ],
+  "scripts": {
+    "test": "npm run test --workspaces",
+    "dev": "node ./scripts/start-dev.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/web3-storage/example-forum-dapp.git"
+  },
+  "keywords": [
+    "ipfs",
+    "filecoin",
+    "dapp",
+    "decentralized",
+    "web3",
+    "web3.storage"
+  ],
+  "author": "Yusef Napora <yusef@protocol.ai>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/web3-storage/example-forum-dapp/issues"
+  },
+  "homepage": "https://github.com/web3-storage/example-forum-dapp#readme",
+  "devDependencies": {
+    "concurrently": "^6.3.0"
+  },
+  "dependencies": {
+    "@web3-react/network-connector": "^6.1.9"
+  }
+}
